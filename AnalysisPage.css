@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e3f0d3, #e6facd);
+  height: 100vh;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#income{
+  margin-left: 200px;
+  margin-top: 200px;
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+
+#Expense{
+  margin-left: 200px;
+  margin-top: 200px;
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  background: #99e33b;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px #9ef52c;
+  z-index: 1;
+}
+.logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+a {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.bx {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background: #98f720;
+}
+nav:hover {
+  width: 220px;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  background: none !important;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+#chartContainer {
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}

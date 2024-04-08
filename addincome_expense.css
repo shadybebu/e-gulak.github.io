@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat";
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background: linear-gradient(to right, #e3f0d3, #e6facd);
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    background: #99e33b;;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px #ffffff ;
+    z-index: 1; 
+}
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+ 
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: white;
+    
+}
+
+    a{
+        position: relative;
+        color: white;
+        font-size: 14px;
+        display: table;
+        width: 300px;
+        padding: 10px;
+    }
+
+.bx {
+ position: relative;
+ width: 70px;
+ height: 40px;
+ top: 14px;
+ font-size: 20px;
+ text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}   
+
+    a:hover {
+        background: #98f720;
+    } 
+nav:hover {
+    width: 220px;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.logout {
+    position: absolute;
+    bottom : 0;
+}   
+
+
+form {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111; /* darker background color for form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* box shadow for depth */
+    color : white;
+}
+h1{
+    font-size: 80px;
+    padding: 10px;
+}
+button{
+    font-size: 40px!important;
+    height: 80px;
+}
+label{
+    font-size: 40px;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* input background color */
+    color: #fff; /* input text color */
+    font-size: 18px;
+}
+
+button {
+    background-color: #4CAF50; /* green button color */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* darker green on hover */
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50; /* green outline on focus */
+}

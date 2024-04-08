@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e3f0d3, #e6facd);
+}
+
+.mainLoginSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52vw;
+  height: 62vh;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+.accounts {
+  display: flex;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(224, 220, 220);
+  height: 40px;
+  width: 40px;
+  margin-left: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+
+.signInButton {
+  background-color: #99e33b;
+  color: black;
+  padding: 10px 45px;
+  border-radius: 8px;
+  font-size: 12px;
+  font: bolder;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.forgot {
+  cursor: pointer;
+}
+
+.forgot:hover {
+  color: black;
+}
+
+/* Sign In  */
+.signIn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: start 1s forwards;
+}
+
+.signIn > p {
+  color: rgb(97, 96, 96);
+  font-size: 13px;
+}
+
+.signIn > * {
+  margin: 8px;
+}
+
+.fadeToRight {
+  animation: moveAndFade 1s forwards;
+}
+
+@keyframes moveAndFade {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(20%);
+    visibility: hidden;
+  }
+}
+
+@keyframes start {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* toggler */
+
+.toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(to right, #aae067, #99e33b);
+  width: 50%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.toggler > * {
+  margin-top: 28px;
+  color: black;
+}
+
+.toggler > p {
+  font-size: smaller;
+  text-align: center;
+}
+
+.toggler .button {
+  border: 1px solid white;
+  padding: 10px 45px;
+  border-radius: 8px;
+  font-size: 12px;
+  font: bolder;
+  cursor: pointer;
+}
+
+.togglerToLeft {
+  transition: all 0.6s ease-in-out;
+  transform: translateX(-100%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+
+
+
+ .signUp {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+  transform: translateX(-50%);
+}
+
+.signUp > p {
+  color: rgb(97, 96, 96);
+  font-size: 13px;
+}
+
+.signUp > * {
+  margin: 8px;
+}
+
+input{
+  padding: 7px;
+  border-radius: 23px;
+  margin-bottom:6px ;
+
+} 
+.inputBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+
+.inputBox input { 
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #99e33b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top : 10px;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.comeToRight {
+  visibility: hidden;
+  animation: comeToRight 2s forwards;
+}
+
+@keyframes comeToRight {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainLoginSection {
+    width: 90vw;
+  }
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  padding: 14px;
+  list-style: none;
+}
+
+.logo {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.regi {
+  color: rgb(97, 96, 96);
+  font-weight: 700;
+}
+
+#eyeicon {
+  position: absolute;
+  top: 50%;
+  left : 190px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding : 0.5 px;
+ 
+}

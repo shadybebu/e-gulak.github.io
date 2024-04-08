@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e3f0d3, #e6facd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.income > a,
+.expenses > a,
+.balance > a {
+  background-color: white;
+  border-radius: 7px;
+  margin: 3px;
+  color: black;
+}
+.income,
+.expenses,
+.balance {
+  display: flex;
+  align-items: center;
+}
+
+.income > p,
+.expenses > p,
+.balance > p {
+  font-size: 28px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  background: #99e33b;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px #9ef52c;
+  z-index: 1;
+}
+.logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-weight: bold;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+a {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.bx {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover {
+  background: #98f720;
+}
+nav:hover {
+  width: 220px;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  background: none !important;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.main h1 {
+  font-size: 32px; /* Set the font size */
+  color: rgb(0, 0, 0); /* Set the text color */
+  font-weight: bold; /* Set the font weight */
+  text-align: center; /* Center align the text */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+.container {
+  width: 1650px;
+  height: 850px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(to right, #afdf75, #9cdf46);
+}
+.container > h1 {
+  font-size: 70px;
+}
+h3 {
+  font-size: 40px;
+  margin: 30px;
+}
+.record {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Set a light gray background color */
+}
+
+.record h3 {
+  margin-top: 0;
+  color: #333; /* Set font color to black */
+}
+
+.buttons > a {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Use website color for buttons */
+  color: #fff; /* Set font color to white */
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  color: black;
+}
+
+.buttons > a:hover {
+  background-color: #90f70c; /* Darken button color on hover */
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
